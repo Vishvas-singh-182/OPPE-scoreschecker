@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux-Oppe Score</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="popup" class="popup">
+        <h2>Select Your Course</h2>
+        <button onclick="selectCourse('System Command')">System Command</button>
+        <button onclick="selectCourse('Introduction to Linux Programming')">Introduction to Linux Programming</button>
+    </div>
+
+    <div id="rollInput" class="hidden">
+        <h2>Enter Your Roll Number</h2>
+        <input type="text" id="rollNumber" placeholder="Enter 10-digit Roll No.">
+        <button onclick="submitRollNo()">Submit</button>
+    </div>
+
+    <div id="result" class="hidden">
+        <h2>Oppe Score Result</h2>
+        <p id="resultText"></p>
+        <button id="scoreDistBtn" class="hidden" onclick="showScoreDistribution()">View Score Distribution</button>
+    </div>
+
+    <div id="scoreImageContainer" class="hidden">
+        <h2>Score Distribution</h2>
+        <img id="scoreImage" src="" alt="Score Distribution Image">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
